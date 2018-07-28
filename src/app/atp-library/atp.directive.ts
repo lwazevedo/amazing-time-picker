@@ -37,6 +37,7 @@ export class AtpDirective implements ControlValueAccessor {
     const onlyMinute = ele.getAttribute('onlyMinute') === 'true';
     const onlyAM = ele.getAttribute('onlyAM') === 'true';
     const onlyPM = ele.getAttribute('onlyPM') === 'true';
+    const hours24 = ele.getAttribute('hours24') === 'true';
     let arrowStyle = ele.getAttribute('arrowStyle');
     arrowStyle = (arrowStyle) ? JSON.parse(arrowStyle.replace(new RegExp('\'', 'g'), '"')) : '';
     const timePickerFunction = this.atp.open({
@@ -51,6 +52,7 @@ export class AtpDirective implements ControlValueAccessor {
       onlyMinute,
       onlyAM,
       onlyPM,
+      hours24,
       preference
     });
 

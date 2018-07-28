@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { IClockNumber, IDisplayPreference, TimePickerConfig } from '../definitions';
 import { AtpCoreService } from '../atp-core.service';
-import { ITime } from '../definitions';
+import { ITime, ehours24 } from '../definitions';
 
 @Component({
   selector: 'time-picker',
@@ -310,6 +310,9 @@ export class TimePickerComponent implements OnInit {
   public GetHour () {
     if (this.preference && this.preference.hour) {
       return this.preference.hour(this.time.hour);
+    }
+    if (this.config.hours24 && this.time.ampm === 'PM') {
+      return ehours24[this.time.hour];
     }
     return this.time.hour;
   }

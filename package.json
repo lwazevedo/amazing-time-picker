@@ -1,8 +1,8 @@
 {
-  "name": "amazing-time-picker",
-  "version": "1.5.2",
+  "name": "amazing-time-picker-view24h",
+  "version": "1.5.3",
   "license": "MIT",
-  "repository": "https://github.com/owsolutions/amazing-time-picker.git",
+  "repository": "https://github.com/lwazevedo/amazing-time-picker",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
