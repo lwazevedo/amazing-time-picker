@@ -6,7 +6,7 @@ A visual time picker for angular 2+ projects. You can use this timepicker with A
 You need to install this repository as dependency and import it to your `app.module.ts` in `imports` section.
 
 ```
-npm i amazing-time-picker-view24hr --save
+npm i amazing-time-picker-view24h --save
 ```
 
 then, open your `app.module.ts` or other module that you want to use timepicker among, and import and add it to the `imports` section:
